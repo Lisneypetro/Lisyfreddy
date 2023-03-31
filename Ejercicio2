@@ -1,0 +1,21 @@
+myArray = (1, 2, 2, 5, 4, 6, 7, 8, 8, 8)
+
+F = len(myArray)
+Numero = myArray[0]
+Cont = 0
+long = 0
+
+
+for i in range(F):
+    Cont = 0
+    for j in range(F):
+        if myArray[i] == myArray[j]:
+            Cont += 1
+            if Cont > long:
+                Numero = myArray[i]
+                longitud = Cont
+
+print('numero')
+print(Numero)
+print('longitud')
+print(long)
